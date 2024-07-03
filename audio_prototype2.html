@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Randomizer</title>
+  <script type="text/javascript">
+    function randomSurvey() {
+      var surveys = [
+        "https://docs.google.com/forms/d/e/1FAIpQLSfVRDzUmCNT4lxbfNvLLn9f2SpbAH41tri5YTq0w2lKCXh5_A/viewform?usp=sf_link", 
+        "https://docs.google.com/forms/d/e/1FAIpQLSeYHxarSHKVB-7RCgNVleVKP0QlJh9DR8TQPu3MOphv6l4J1w/viewform?usp=sf_link", 
+        "https://docs.google.com/forms/d/e/1FAIpQLSfL8tD8M0QKoslfCo0s0kldLx1BbgMEtqKUp0OmZbpybkIatw/viewform?usp=sf_link",
+        "https://docs.google.com/forms/d/e/1FAIpQLSdt16d1Rc08XhLaOQtuA3GTz3I7pnxnR2GbSffPbfFKLcs__Q/viewform?usp=sf_link",
+        "https://docs.google.com/forms/d/e/1FAIpQLSf5_XuDaD9fjbg_O8huCHIMPF08R1hElaXYspeFgWJT2uOAmw/viewform?usp=sf_link",
+        "https://docs.google.com/forms/d/e/1FAIpQLSctzwGawlci3XICYoLU0cto85L6i673mYFkUOatnGhTaQJRxw/viewform?usp=sf_link",
+      
+      ];
+      var randomIndex = Math.floor(Math.random() * surveys.length);
+      window.location.href = surveys[randomIndex];
+    }
+  </script>
+</head>
+<body onload="randomSurvey()">
+  <p>Redirecting to a survey...</p>
+</body>
+</html>
